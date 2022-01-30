@@ -3,7 +3,7 @@ const apiKey = 'dUkU2MYXPUjLXuIRTYFaSRLs4GaLSsDWMewYaLbT';
 
 $('#submit-input').on('click', function (e) {
     e.preventDefault();
-    startAJAXRequest(apiKey, '1996-02-29');
+    startAJAXRequest(apiKey, userDate);
 });
 
 function startAJAXRequest(key, date) {
