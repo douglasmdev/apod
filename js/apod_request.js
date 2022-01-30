@@ -11,6 +11,7 @@ function startAJAXRequest(key, date) {
     url: `https://api.nasa.gov/planetary/apod?api_key=${key}&date=${date}`,
     success: function (r) {
         console.log(r);
+        displayInfo(r);
     }
     });
 }

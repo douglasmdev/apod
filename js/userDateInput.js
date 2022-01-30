@@ -1,6 +1,6 @@
 
 const dateInput = $('#date-input')[0];
-let userDate;
+let userDate = dateInput.value;
 
 dateInput.onchange = function () {
     userDate = dateInput.value; 
