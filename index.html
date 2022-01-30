@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>APOD API</title>
 </head>
 <body>
-
     <main>
-        <h1>Interface para a APOD API</h1>
-        <p>Escolha uma data e acesse o conteúdo da APOD para este dia.</p>
-        <form action="">
-            <input type="date" value="2022-01-01" id="date-input">
-            <input type="submit" id="submit-input">
-        </form>
+        <div id="interface">
+            <h1>APOD API Interface</h1>
+            <p>Escolha uma data e acesse o conteúdo da APOD para este dia.</p>
+            <form action="">
+                <input type="date" value="2022-01-01" id="date-input">
+                <input type="submit" id="submit-input">
+            </form>
+        </div>
 
         <section id="result-field">
             <h2 id="result-title"></h2>
-            <div>
+            <div id="result-image-field">
                 <img src="" alt="Image from NASA" id="result-image">
             </div>
             <p id="result-explanation"></p>
