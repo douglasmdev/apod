@@ -76,6 +76,11 @@ section * {
     justify-content: center;
 }
 
+iframe {
+    width: 250px;
+    height: 250px;
+}
+
 #result-explanation {
     background-color: rgba(0, 0, 0, 0.671);
     border: 1px solid rgba(0, 0, 0, 0.671);
