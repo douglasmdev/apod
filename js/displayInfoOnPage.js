@@ -5,6 +5,8 @@ const resultImgField = $('#result-image')[0];
 const resultVidField = $('#result-video')[0];
 const resultExpField = $('#result-explanation')[0];
 
+$(resultField).hide();
+
 function isVideo(requestResult) {
     if (requestResult.media_type == 'video')
         return true;
@@ -26,7 +28,7 @@ function displayMedia(requestResult) {
 }
 
 function displayInfo(requestResult) {
-    $(resultImgField).empty();
+    $(resultField).show();
     resultTitleField.innerText = requestResult.title;
     displayMedia(requestResult);
     resultExpField.innerText = requestResult.explanation;
