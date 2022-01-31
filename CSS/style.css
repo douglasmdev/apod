@@ -12,26 +12,31 @@ body {
 }
 
 main {
-    position: relative;
+    display: flex;
+    justify-content: space-evenly;
     height: 100%;
 }
 
 #interface {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 30%;
     height: 100%;
-    margin-bottom: 10%;
     color: white;
     background-color: rgba(0, 0, 0, 0.623);
+    font-size: x-large;
+    padding: 2%;
 }
 
-#interface > h1 {
-    margin-top: 10%;
+#interface h1 {
     margin-bottom: 10%;
     text-align: center;
 }
 
-
+#interface p {
+    text-align: center;
+}
 
 form {
     display: flex;
@@ -50,17 +55,16 @@ form * {
 }
 
 section {
-    display: inline-block;
-    position: absolute;
-    right: 0;
     width: 70%;
-    padding-left: 5%;
     color: white;
-    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
 }
 
 section * {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 #result-title {
@@ -76,17 +80,54 @@ section * {
     background-color: rgba(0, 0, 0, 0.671);
     border: 1px solid rgba(0, 0, 0, 0.671);
     border-radius: 5px;
+    padding: 2%;
+    width: 100%;
 }
 
 #result-image {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     main {
-        display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: flex-start;
+    } 
+
+    #interface {
+        width: 100vw;
+        justify-content: center;
     }
+
+    #interface * {
+        margin-bottom: 2%;
+    } 
+
+    #interface h1 {
+        margin-top: 12%;
+        margin-bottom: 6%;
+    }
+
+    #interface p {
+        margin-bottom: 0;
+    }
+
+    form {
+        margin-top: 6%;
+    }
+
+    form * {
+        width: 50%;
+    }
+
+    #submit-input {
+        width: 40%;
+    }
+
+    section {
+        width: 100vw;
+        padding: 5%;
+    }
+
 }
