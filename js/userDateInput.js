@@ -5,7 +5,9 @@ const currentYear = date.getFullYear();
 let currentMonth = date.getMonth() + 1;
 if (currentMonth < 10)
     currentMonth = `0${currentMonth}`;
-const currentDay = date.getDate();
+let currentDay = date.getDate();
+if (currentDay < 10)
+    currentDay = `0${currentDay}`;
 const currentDate = `${currentYear}-${currentMonth}-${currentDay}`;
 
 
